@@ -1,6 +1,6 @@
 # Welcome to Jarvis
 
-Hello!, \n
+Hello!,
 This is Official github repository for **Jarvis**, A __python__ based discord bot developed by me as a python learning project
 ![Jarvis Cover photo](https://media.discordapp.net/attachments/758895333224480808/884462627248549958/a69a6caef02314ceb894e630f762eab4.png?width=541&height=406)
 
