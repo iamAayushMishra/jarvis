@@ -48,7 +48,7 @@
 }
 
 .navbar-toggle{
-    color: #ffffff;
+    color: var(--primary-color);
     display: none;
 }
 
