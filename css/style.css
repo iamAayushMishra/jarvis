@@ -2,21 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--secondary-color);
 }
 
 :root{
-    --primary-color: #edf2fc;
-    --secondary-color: #212121;
-}
-  
-.light-theme{
     --primary-color: #000106;
     --secondary-color: #fff;
+}
+  
+.dark-theme{
+    --primary-color: #edf2fc;
+    /* --secondary-color: #212121; */
+    --secondary-color: #2c2c34;
 }
 
 
 /* Navbar pc version */
+.navbar{
+    background-color: var(--secondary-color);
+}
+.navbar-logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    user-select: none;
+    flex: 1;
+    color: var(--primary-color);
+}
+
 .navbar ul{
     display: flex;
     width: 100%;
@@ -40,12 +51,7 @@
 .navbar-links a:hover{
     color: #DF5646;
 }
-.navbar-logo{
-    font-size: 1.5rem;
-    user-select: none;
-    flex: 1;
-    color: var(--primary-color);
-}
+
 
 .navbar-toggle{
     color: var(--primary-color);
@@ -71,7 +77,7 @@
 
     .navbar-links a:hover{
         color: #ffffff;
-        background-color: #232323;
+        /* background-color: #232323; */
         border: none;
         width: 100%;
     }
@@ -88,6 +94,7 @@
     padding-right: 8%;
     /* box-sizing: border-box; */
     color: var(--primary-color);
+    background-color: var(--secondary-color);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -153,13 +160,14 @@
 
 .col-2 .btn{
     text-decoration: none;
-    font-size: 28px;
-    font-weight: 500;
-    background: var(--primary-color);
-    color: #DF5646;
+    font-size: 24px;
+    font-weight: 300;
+    background: var(--secondary-color);
+    color: #303ef3;
+    font-family: 'Fugaz One';
     margin-left: 0;
     margin-right: 30px;
-    
+    background-color: #202020;
 }
 
 
@@ -198,4 +206,93 @@
     width: 30px;
     cursor: pointer;
   }
+
+
+  /* page 2 services */
+.services{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    background-color: var(--secondary-color);
+}
+
+.services h1{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.services h1::after{
+    content: '';
+    background-color: #DF5646;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom:  -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.service{
+    text-align: center;
+    padding: 35px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.service i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef3;
+}
+
+.service h2{
+    position: relative;
+    margin-bottom: 25px;
+    font-family: 'Fugaz One';
+}
+.service h2::after{
+    content: '';
+    background-color: #303ef3;
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    bottom:  -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service:hover{
+    background-color: #303ef3;
+    color: #fff;
+    transform: scale(1.20);
+}
+
+.service:hover i{
+    /* color: var(--secondary-color); */
+    color: #DF5646;
+}
+
+
+.service:hover h2::after{
+    /* color: var(--secondary-color); */
+    background-color: #DF5646;
+}
+
+
+.service span{
+    text-decoration: underline;
+}
 
