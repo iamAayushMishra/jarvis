@@ -29,13 +29,13 @@
        <nav class="navbar">
            <ul>
                <!-- logo  -->
-            <li class="navbar-logo">JARVIS</li>
-            <img src="images/light-mode.png" id="icon">
+            <p class="navbar-logo">JARVIS</p>
+            <img src="images/dark-mode.png" id="icon">
             <li class="navbar-toggle"><i class="fa-solid fa-bars"></i></li>
             <!-- Navbars links -->
-            <li class="navbar-links"><a href="https://iamaayushmishra.github.io/jarvis/">Home</a></li>
-            <li class="navbar-links"><a href="https://discord.gg/5tTf3reYeQ" target="_blank">Contact Us</a></li>
-            <li class="navbar-links"><a href="https://discord.com/oauth2/authorize?client_id=859656056660819988&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn">Invite</a></li>
+            <li class="navbar-links"><a href="#">Home</a></li>
+            <li class="navbar-links"><a href="#">Contact Us</a></li>
+            <li class="navbar-links"><a href="#" class="btn">Invite</a></li>
            </ul>
        </nav>
        <!-- script for toggle menue -->
@@ -51,31 +51,59 @@
 
 
    </div>
-   <div class="row">
-    <div class="col-1">
-        <img src="images/man.png">
-        <!-- <img src="images/elements.png" class="elements"> -->
+   <div class="hero">
+        <div class="row">
+            <div class="col-1">
+                <img src="images/man.png">
+                <!-- <img src="images/elements.png" class="elements"> -->
+            </div>
+            <div class="col-2">
+                <h1>Say,<br>Hi to <span>Jarvis!</span></h1>
+                <p>Jarvis, is a multiutility Bot <span>Developed in Python</span>. Configure, moderate, and build a Fun discord server with Jarvis.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=859656056660819988&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn"><i class="fa-brands fa-discord"></i> Invite Now!</a>
+            </div>
+        </div>
     </div>
-    <div class="col-2">
-        <h1>Say,<br>Hi to <span>Jarvis</span></h1>
-        <p>Jarvis,is a multiutility Bot <span>Developed in Python</span>. It have numerous features
-            like Moderation, Utility, Fun and many more..., Invite JARVIS now</span></p>
-        <a href="https://discord.com/oauth2/authorize?client_id=859656056660819988&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn">Invite Now! ✌</a>
-    </div>
-</div>
-</div>
+
         <!-- Script for light to dark switch -->
     <script>
     var icon = document.getElementById("icon");
   
     icon.onclick = function(){
-      document.body.classList.toggle('light-theme')
-      if(document.body.classList.contains("light-theme")){
-        icon.src = "images/dark-mode.png"
-      }else{
+      document.body.classList.toggle('dark-theme')
+      if(document.body.classList.contains("dark-theme")){
         icon.src = "images/light-mode.png"
+      }else{
+        icon.src = "images/dark-mode.png"
       }
     }
   </script>
+
+  <!-- Page 2 Services -->
+  <div class="services">
+      <h1>Features!</h1>
+      <div class="container">
+          <div class="service">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h2>MODERATION</h2>
+              <p>Keep your server safe and clean with Moderation features such as <span>Kick</span> , <span>ban</span>, <span>mute</span>, and many more.</p>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-gear"></i>
+              <h2>UTILITY</h2>
+              <p>Save your time surfing the web by the handy utility commands</p>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-chess-king"></i>
+              <h2>FUN</h2>
+              <p>Have some fun time among your community by these short and sweet fun commands</p>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-music"></i>
+              <h2>MUSIC</h2>
+              <p>Listen to music right from your Discord server with jarvis music commands.</p>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
